@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Apprentissage Personnalisé</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Apprentissage Personnalisé</h1>
+    <p>Apprends à ton rythme avec des méthodes adaptées à toi</p>
+</header>
+
+<section>
+    <div class="card">
+        <h2>📚 Qu'est-ce que c'est ?</h2>
+        <p>
+            L’apprentissage personnalisé est une méthode qui adapte les cours selon
+            le niveau, les besoins et le rythme de chaque étudiant.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🎯 Les avantages</h2>
+        <ul>
+            <li>Apprentissage plus efficace</li>
+            <li>Motivation améliorée</li>
+            <li>Suivi personnalisé</li>
+            <li>Meilleure compréhension</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>🤖 Besoin d’aide ?</h2>
+        <p>
+            Utilise notre chatbot pour poser tes questions et recevoir de l’aide
+            instantanément !
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 - Projet éducatif</p>
+</footer>
+
+
+<!-- 🤖 CHATBOT DIALOGFLOW ICI -->
+<!-- Remplace TON_ID par ton vrai agent-id -->
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+<df-messenger
+  intent="WELCOME"
+  chat-title="MonChatBot"
+  agent-id="TON_ID"
+  language-code="fr"
+></df-messenger>
+
+</body>
+</html>
