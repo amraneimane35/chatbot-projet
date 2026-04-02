@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apprentissage Personnalisé</title>
+    <title>À propos - LearnSmart</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -15,51 +15,47 @@
         <div class="nav-container">
             <div class="logo"><i class="fas fa-graduation-cap"></i><span>LearnSmart</span></div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html" class="active">À propos</a></li>
             </ul>
             <div class="hamburger"><span></span><span></span><span></span></div>
         </div>
     </nav>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>L'Apprentissage Personnalisé<br><span class="highlight">pour Tous</span></h1>
-            <p>L'IA révolutionne l'éducation en adaptant chaque parcours à vos besoins.</p>
-            <div class="cta-buttons">
-                <a href="#stats" class="btn-primary">Les avantages</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="stats" class="stats">
+    <section class="about-hero">
         <div class="container">
-            <h2>Les Avantages Concrets</h2>
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
-                    <div class="stat-number" data-target="85">0%</div>
-                    <p>Amélioration<br>résultats</p>
+            <h1>Comment fonctionne<br><span class="highlight">l'apprentissage personnalisé ?</span></h1>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Analyse Cognitive</h3>
+                    <p>L'IA analyse votre style d'apprentissage pour un parcours unique.</p>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-icon"><i class="fas fa-heart"></i></div>
-                    <div class="stat-number" data-target="60">0%</div>
-                    <p>Engagement<br>élèves</p>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Adaptatif</h3>
+                    <p>Contenu qui s'adapte en temps réel à vos performances.</p>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-icon"><i class="fas fa-clock"></i></div>
-                    <div class="stat-number" data-target="40">0%</div>
-                    <p>Temps gagné</p>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Multi-plateforme</h3>
+                    <p>Apprenez partout, sur tous vos appareils.</p>
                 </div>
-            </div>
-            <div class="chart-container">
-                <h3>Comparaison Performances</h3>
-                <canvas id="advantagesChart"></canvas>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Support 24/7</h3>
+                    <p>Assistant IA disponible à tout moment.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ✅ DIALOGFLOW DIRECT -->
+    <!-- ✅ DIALOGFLOW DIRECT (même code) -->
     <div class="dialogflow-float">
         <button id="dialogflow-trigger" class="dialogflow-btn" title="Chat IA">
             <svg viewBox="0 0 24 24" fill="#4285f4" width="28" height="28">
@@ -78,7 +74,6 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
 
